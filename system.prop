@@ -2,9 +2,6 @@
 # system.prop for one+
 #
 
-# Dreaded Tweaks
-ro.dx.version=0.1
-
 # Bluetooth
 bluetooth.hfp.client=1
 qcom.bluetooth.soc=smd
@@ -30,7 +27,7 @@ media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 
 # Display
-ro.sf.lcd_density=360
+ro.sf.lcd_density=480
 persist.hwc.mdpcomp.enable=true
 ro.opengles.version=196608
 
