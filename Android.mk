@@ -162,14 +162,4 @@ $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wcd9320; \
 $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
     ln -sf /data/misc/wifi/WCNSS_qcom_cfg.ini \
 	    $(TARGET_OUT)/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libv4a_fx_jb_NEON
-LOCAL_SRC_FILES := $(LOCAL_MODULE).so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_PATH := $(TARGET_OUT)/lib/soundfx
-include $(BUILD_PREBUILT)
-
 endif

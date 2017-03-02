@@ -31,21 +31,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=19
 
-# Change screen density
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=360
-
 # Add dx tweaks version
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.dx.version=0.1
+    ro.dx.version=0.2
 
 # Enable google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
 
-# Include viper4android files
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/viper4android/libv4a_fx_jb_NEON.so:system/lib/soundfx/libv4a_fx_jb_NEON.so
+PRODUCT_PACKAGES += \
+    ViperFX \
+    MagiskManager \
+    Substratum
+	# masquerade
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -103,8 +101,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Gello
-PRODUCT_PACKAGES += \
-    Gello
+# PRODUCT_PACKAGES += \
+#     Gello
 
 # Graphics
 PRODUCT_PACKAGES += \
