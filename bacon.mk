@@ -41,9 +41,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     ViperFX \
+    libv4a_fx \
     MagiskManager \
-    Substratum
-	# masquerade
+    Substratum \
+	masquerade
 
 # Audio
 PRODUCT_COPY_FILES += \
