@@ -80,10 +80,13 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
+# PRODUCT_PACKAGES += \
+#     camera.bacon \
+#     libshim_camera
+
 PRODUCT_PACKAGES += \
-    camera.bacon \
-    libshim_camera \
-    Snap
+    camera.msm8974 \
+    libshim_camera
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -218,7 +221,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.msm8974
+    power.bacon
 
 # Ramdisk
 PRODUCT_PACKAGES += \
