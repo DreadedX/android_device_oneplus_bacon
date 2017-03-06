@@ -80,12 +80,8 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
-# PRODUCT_PACKAGES += \
-#     camera.bacon \
-#     libshim_camera
-
 PRODUCT_PACKAGES += \
-    camera.msm8974 \
+    camera.bacon \
     libshim_camera
 
 # Charger
