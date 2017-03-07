@@ -44,7 +44,10 @@ PRODUCT_PACKAGES += \
     libv4a_fx \
     MagiskManager \
     Substratum \
-	masquerade
+	ThemeInterfacer
+
+PRODUCT_COPY_FILES += \
+  packages/apps/MagiskManager/Magisk.zip:system/addon.d/Magisk.zip
 
 # Audio
 PRODUCT_COPY_FILES += \
