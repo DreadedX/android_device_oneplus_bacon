@@ -25,11 +25,17 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay vendor/extra/overlays/phone-108
 PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
-    libantradio
+    libantradio \
+    ViperFX \
+    MagiskManager \
+    Substratum \
+	ThemeInterfacer
 
 # API (for CTS backward compatibility)
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.first_api_level=19
+    ro.product.first_api_level=19 \
+    ro.dx.version=1.1-dev \
+    ro.opa.eligible_device=true
 
 # Audio
 PRODUCT_COPY_FILES += \
