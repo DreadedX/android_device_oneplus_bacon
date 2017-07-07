@@ -33,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add dx tweaks version
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.dx.version=1.0
+    ro.dx.version=1.2-dev
 
 # Enable google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
