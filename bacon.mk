@@ -33,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add dx tweaks version
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.dx.version=1.2-dev
+    ro.fiveten.version=1.2-dev
 
 # Enable google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
     libv4a_fx \
     MagiskManager \
     Substratum \
-	ThemeInterfacer
+    ThemeInterfacer \
+	ParanoidPapers
 
 PRODUCT_COPY_FILES += \
   packages/apps/MagiskManager/Magisk.zip:system/addon.d/Magisk.zip
