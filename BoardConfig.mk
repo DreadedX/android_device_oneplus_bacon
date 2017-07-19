@@ -158,7 +158,7 @@ TARGET_RIL_VARIANT := caf
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
 
 # Compile libhwui in performance mode
-HWUI_COMPILE_FOR_PERF := true
+# HWUI_COMPILE_FOR_PERF := true
 
 # RPC
 TARGET_NO_RPC := true

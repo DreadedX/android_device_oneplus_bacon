@@ -35,6 +35,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fiveten.version=1.2-dev
 
+# OpenGApps
+GAPPS_VARIANT := nano
+
+PRODUCT_PACKAGES += \
+    CalculatorGoogle \
+    CalendarGooglePrebuilt \
+    Chrome \
+    GoogleDialer \
+    PrebuiltDeskClockGoogle \
+    PrebuiltBugle \
+    LatinImeGoogle
+    
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_FORCE_MATCHING_DPI := true
+WITH_DEXPREOPT := true
+
 # Enable google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
@@ -45,7 +61,7 @@ PRODUCT_PACKAGES += \
     MagiskManager \
     Substratum \
     ThemeInterfacer \
-	ParanoidPapers
+    ParanoidPapers
 
 PRODUCT_COPY_FILES += \
   packages/apps/MagiskManager/Magisk.zip:system/addon.d/Magisk.zip
@@ -265,3 +281,6 @@ $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
+
+# Inherit OpenGApps
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
