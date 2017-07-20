@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
     
 GAPPS_FORCE_PACKAGE_OVERRIDES := true
 GAPPS_FORCE_MATCHING_DPI := true
-WITH_DEXPREOPT := true
+# Takes op to much space
+# WITH_DEXPREOPT := true
 
 # Enable google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
